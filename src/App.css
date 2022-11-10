@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #282c34;
+}
+
+header {
+  align-self: center;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.challenge {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #61DAFB;
+  color: #ffffff;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
