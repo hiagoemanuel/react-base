@@ -16,17 +16,12 @@
 .App {
   width: 100vw;
   height: 100vh;
-  padding: 10px 0;
-  display: flex;
   overflow-x: hidden;
-  justify-content: flex-start;
-  flex-direction: column;
   background-color: #282c34;
 }
 
 header {
   display: flex;
-  margin-bottom: 20vmin;
   justify-content: center;
 }
 
@@ -38,15 +33,18 @@ header {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+  width: 100vw;
+  height: calc(100vh - 20vmin);
+  padding: 15px;
 }
 
 .challenge {
   max-width: 500px;
-  min-height: 200px;
+  height: fit-content;
   padding: 30px;
-  margin: 0 10px;
   border-radius: 30px;
   background-color: #61DAFB;
   font-size: 18px;
@@ -57,7 +55,21 @@ main {
 .challenge h1 {
   margin-bottom: 10px;
 }
-
+.btn-style {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #282c34;
+  transition: 0.3s ease-in;
+}
+.btn-style:hover {
+  background-color: #282c34;
+  color: #ffffff;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

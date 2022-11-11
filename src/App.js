@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Paragraph from './components/paragraph/paragraph'
+import Button from './components/button/button'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </div>
         <div className="challenge">
           <h1>Desafio 2</h1>
+          <Button label="Olá Mundo :D" />
         </div>
       </main>
     </div>
